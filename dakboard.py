@@ -15,8 +15,8 @@ def hello():
 
   onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
   filename = mypath + random.choice(onlyfiles)
-  return send_file(filename, mimetype="image/png")
+  return send_file(filename, mimetype="image/jpeg")
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=3000)
+    app.run(host='0.0.0.0', port=5002)
